@@ -96,14 +96,13 @@ export default function Home() {
                             >
                                 {RoutingResult({ route })}
                             </div>
-                        </div>
+                        <div style={{ position: "relative", width: "100%", height: "500px" }}>
 
                          <Image
                             src="/PlanFerroviaire.png"
                             alt="Plan du réseau ferroviaire, présent et projets"
-                            width={6000}
-                            height={3375}
-                            style={{ width: '100%', height: 'auto', marginTop: '2rem' }}
+                            fill
+                            style={{ objectFit: "contain" }}
                         />
 
                         <div className="line-border" role="separator" />
